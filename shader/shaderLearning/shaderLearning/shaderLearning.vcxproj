@@ -72,22 +72,22 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\OpenGlpath\glfw-3.3.6.bin.WIN32\include;D:\OpenGlpath\include;D:\OpenGlpath\include;D:\OpenGlpath\glfw-3.3.6.bin.WIN32\include\GLFW;$(IncludePath);$(IncludePath)</IncludePath>
+    <IncludePath>D:\OpenGlpath\glfw-3.3.6.bin.WIN32\include;D:\OpenGlpath\glad\include;D:\OpenGlpath\include;D:\OpenGlpath\include;D:\OpenGlpath\glfw-3.3.6.bin.WIN32\include\GLFW;$(IncludePath);$(IncludePath);$(IncludePath)</IncludePath>
     <LibraryPath>D:\OpenGlpath\glfw-3.3.6.bin.WIN32\lib-vc2019;D:\OpenGlpath\glfw-3.3.6.bin.WIN32\lib-vc2019;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>D:\OpenGlpath\glfw-3.3.6.bin.WIN32\include;D:\OpenGlpath\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);;$(IncludePath)</IncludePath>
+    <IncludePath>D:\OpenGlpath\glfw-3.3.6.bin.WIN32\include;D:\OpenGlpath\glad\include;D:\OpenGlpath\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);;$(IncludePath);$(IncludePath)</IncludePath>
     <LibraryPath>D:\OpenGlpath\glfw-3.3.6.bin.WIN32\lib-vc2019;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\OpenGlpath\glfw-3.3.6.bin.WIN32\include;D:\OpenGlpath\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);;$(IncludePath)</IncludePath>
+    <IncludePath>D:\OpenGlpath\glfw-3.3.6.bin.WIN32\include;D:\OpenGlpath\glad\include;D:\OpenGlpath\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);;$(IncludePath);$(IncludePath)</IncludePath>
     <LibraryPath>D:\OpenGlpath\glfw-3.3.6.bin.WIN32\lib-vc2019;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>D:\OpenGlpath\glfw-3.3.6.bin.WIN32\include;D:\OpenGlpath\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);;$(IncludePath)</IncludePath>
+    <IncludePath>D:\OpenGlpath\glfw-3.3.6.bin.WIN32\include;D:\OpenGlpath\glad\include;D:\OpenGlpath\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);;$(IncludePath);$(IncludePath)</IncludePath>
     <LibraryPath>D:\OpenGlpath\glfw-3.3.6.bin.WIN32\lib-vc2019;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -154,7 +154,7 @@
     <ClInclude Include="shader.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\OpenGlpath\src\glad.c" />
+    <ClCompile Include="..\..\..\..\..\OpenGlpath\glad\src\glad.c" />
     <ClCompile Include="shader.cpp" />
   </ItemGroup>
   <ItemGroup>
